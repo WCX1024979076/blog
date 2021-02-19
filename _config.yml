@@ -99,7 +99,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "CSDN.UPC-WCX",
+        href: "https://blog.csdn.net/weixin_46048848"
     }
 ]
