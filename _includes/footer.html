@@ -1,5 +1,17 @@
 <!-- Footer -->
 <footer>
+
+	<script>
+		for(i=0;i<document.getElementsByTagName("img").length;i++)
+		{
+			if(document.getElementsByTagName("img")[i]["src"].toString().indexOf('raw.githubusercontent.com') >= 0)
+			{
+				console.log(document.getElementsByTagName("img")[i]["src"]); //输出该页面的所有链接。
+				document.getElementsByTagName("img")[i].src=document.getElementsByTagName("img")[i]["src"].replace('raw.githubusercontent.com','raw.sevencdn.com');
+				console.log(document.getElementsByTagName("img")[i]["src"]); //输出该页面的所有链接。
+			}
+		}
+	</script>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
