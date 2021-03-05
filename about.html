@@ -137,6 +137,11 @@ header-img: "img/post-bg-rwd.jpg"
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+	
+	for(i=0;i<=document.getElementsByTagName("img").length;i++){
+	console.log(document.getElementsByTagName("img")[i]['src']); //输出该页面的所有链接。
+	document.getElementsByTagName("img")[i]['src']=document.getElementsByTagName("img")[i]['src'].replace('raw.githubusercontent.com','raw.sevencdn.com');
+	}
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
