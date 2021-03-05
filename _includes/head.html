@@ -52,4 +52,17 @@
 
     <!-- ga & ba script hoook -->
     <script></script>
+	
+	
+	<script>
+		for(i=0;i<document.getElementsByTagName("img").length;i++)
+		{
+			if(document.getElementsByTagName("img")[i]["src"].toString().indexOf('raw.githubusercontent.com') >= 0)
+			{
+				console.log(document.getElementsByTagName("img")[i]["src"]); //输出该页面的所有链接。
+				document.getElementsByTagName("img")[i].src=document.getElementsByTagName("img")[i]["src"].replace('raw.githubusercontent.com','raw.sevencdn.com');
+				console.log(document.getElementsByTagName("img")[i]["src"]); //输出该页面的所有链接。
+			}
+		}
+	</script>
 </head>
