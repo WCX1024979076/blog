@@ -54,6 +54,7 @@ layout: default
     </iframe>
 </header>
 
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <!-- Post Content -->
 <article>
     <div class="container">
@@ -153,6 +154,15 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+				<div id="vcomments"></div>
+				<script>
+					new Valine({
+						el: '#vcomments',
+						appId: 'EwhrenCge7qHt0o07vBUEJ41-gzGzoHsz',
+						appKey: 'B9YlXtvvOxtqGRgiKJycCBs5'
+					})
+				</script>
+				
             </div>
         </div>
     </div>
