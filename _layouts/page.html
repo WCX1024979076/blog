@@ -60,6 +60,17 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+				
+				<h5>comment</h5>
+				<div id="vcomments"></div>
+				<script>
+					new Valine({
+						el: '#vcomments',
+						appId: 'EwhrenCge7qHt0o07vBUEJ41-gzGzoHsz',
+						appKey: 'B9YlXtvvOxtqGRgiKJycCBs5'
+					})
+				</script>
+				
             </div>
         {% else %}
 
@@ -202,15 +213,6 @@ layout: default
                 </ul>
                 {% endif %}
 				
-				<h5>comment</h5>
-				<div id="vcomments"></div>
-				<script>
-					new Valine({
-						el: '#vcomments',
-						appId: 'EwhrenCge7qHt0o07vBUEJ41-gzGzoHsz',
-						appKey: 'B9YlXtvvOxtqGRgiKJycCBs5'
-					})
-				</script>
     		</div>
         {% endif %}
 	</div>

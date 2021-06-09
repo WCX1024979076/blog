@@ -30,9 +30,20 @@ header-img: "img/post-bg-rwd.jpg"
         <li><a href="https://github.com">GitHub</a></li>
 		<li><a href="https://www.csdn.net/">CSDN</a></li>
     </ul>
+	
+	<h5>comment</h5>
+	<div id="vcomments"></div>
+	
 </div>
 
-
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'EwhrenCge7qHt0o07vBUEJ41-gzGzoHsz',
+		appKey: 'B9YlXtvvOxtqGRgiKJycCBs5'
+	})
+</script>
 <!-- English Version -->
 <!-- <div class="en post-container">
     <blockquote><p>Yet another iOS Developer. <br>
